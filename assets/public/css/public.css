@@ -1,0 +1,69 @@
+/**
+ * WPCalibrate Content Restriction - Public Stylesheet
+ *
+ * @package WPCalibrate\CommerceAccessRules
+ */
+
+.wpcal-restricted-notice,
+.wpcal-inline-restriction,
+.wpcal-block-restriction-wrapper {
+	margin: 24px 0;
+	padding: 20px 24px;
+	border: 1px solid #e2e8f0;
+	border-left: 4px solid #2563eb;
+	background: #f8fafc;
+	border-radius: 6px;
+	color: #1e293b;
+	font-family: inherit;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.wpcal-restricted-notice p:last-child,
+.wpcal-inline-restriction p:last-child {
+	margin-bottom: 0;
+}
+
+.wpcal-purchase-wrapper {
+	margin-top: 16px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.wpcal-purchase-price {
+	font-size: 18px;
+	font-weight: 700;
+	color: #0f172a;
+}
+
+.wpcal-purchase-button {
+	display: inline-block;
+	background: #2563eb;
+	color: #ffffff !important;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 6px;
+	transition: background-color 0.2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.wpcal-purchase-button:hover,
+.wpcal-purchase-button:focus {
+	background: #1d4ed8;
+	color: #ffffff !important;
+	text-decoration: none;
+	outline: 2px solid #93c5fd;
+	outline-offset: 2px;
+}
+
+/* RTL layout */
+body.rtl .wpcal-restricted-notice,
+body.rtl .wpcal-inline-restriction,
+body.rtl .wpcal-block-restriction-wrapper {
+	border-left: 1px solid #e2e8f0;
+	border-right: 4px solid #2563eb;
+}
